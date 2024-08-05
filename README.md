@@ -7,15 +7,15 @@ This repository contains various projects for the STC89C52 microcontroller.
 
 1. Blink an LED
 2. LED Pattern
-3. Button interfacing using polling
-4. Button interfacing using interrupt
-5. LED control using buttons (polling)
-6. LED control using buttons (interrupts)
-7. Timer interrupt
-8. Generating delay with timer
-9. Debouncing using timer interrupt
-10. Seven segment display interfacing
-11. LCD interfacing
+3. Button Interfacing using Polling
+4. Button Interfacing using Interrupt
+5. LED Control using Buttons (Polling)
+6. LED Control using Buttons (Interrupts)
+7. Timer Interrupt
+8. Generating Delay with Timer
+9. Debouncing using Timer Interrupt
+10. Seven Segment Display Interfacing
+11. LCD Interfacing
 12. Serial Communication with PC
 
 ## Getting Started
