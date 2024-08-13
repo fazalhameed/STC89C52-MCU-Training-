@@ -33,7 +33,7 @@ void dat(unsigned char b)
 void show(unsigned char *s)
 {
     while(*s)
-			{
+{
         dat(*s++);
     }
 }
@@ -43,8 +43,6 @@ void lcd_delay()
     unsigned int lcd_delay;
     for(lcd_delay=0;lcd_delay<=6000;lcd_delay++);
 }
-
-
 void store()
 {
     cmd(64);          //First location
@@ -159,7 +157,7 @@ void main()
     lcd_init();
 	show("CUSTOM CHARACTER");
     while(1) 
-			{
+{
        store();	 
     }
 }
