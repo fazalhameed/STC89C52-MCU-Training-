@@ -7,7 +7,6 @@ void lcd_delay(unsigned int k)
     for(i=0;i<k;i++);
 	 for(j=0;j<2000;j++);
 }
-
 void lcdcmd(unsigned char f)
 {
     lcd_data=(lcd_data & 0x0F) |(f & 0xF0);
@@ -23,7 +22,6 @@ void lcdcmd(unsigned char f)
     lcd_delay(1);
     en=0;
 }
-
 void ldata(unsigned char a)
 {
 	lcd_data=(lcd_data & 0x0F) |(a & 0xF0);
@@ -37,8 +35,7 @@ void ldata(unsigned char a)
     rs=1;
     en=1;
     lcd_delay(1);
-    en=0;
-    
+    en=0;   
 }
 void LCD_String (char *str)	/* Send string to LCD function */
 {
@@ -67,8 +64,6 @@ void lcd_init()
     lcdcmd(0x0c);       /* Display ON Cursor OFF */
   
 }
-
-
 void main()
 {
     unsigned int j;
