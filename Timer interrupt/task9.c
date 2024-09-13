@@ -19,6 +19,5 @@ if (count==110)
   TH0= -84;     //initial value for 1ms
   IE=0x82;
   TR0 = 1;     // timer start
-	while(1)
-	{}
+	while(1){}
 	}
