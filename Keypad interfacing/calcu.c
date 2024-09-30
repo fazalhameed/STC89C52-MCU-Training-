@@ -4,7 +4,6 @@
 sbit rs = P2^6;
 sbit rw = P2^5;
 sbit en = P2^7;
-
 sbit r1 = P1^0;
 sbit r2 = P1^1;
 sbit r3 = P1^2;
@@ -13,6 +12,7 @@ sbit c1 = P1^4;
 sbit c2 = P1^5;
 sbit c3 = P1^6;
 sbit c4 = P1^7;
+
 void row_scan();
 void delay(unsigned char);
 void calc();
@@ -42,8 +42,8 @@ void calc()
     }
 
 
-void row_scan()
-{
+ void row_scan()
+ {
     //---ROW 1---//
     r1 = 0;
     r2 = r3 = r4 = 1;
@@ -96,7 +96,7 @@ void row_scan()
         delay(32);
         while(c1 == 0)
         {
-					lcd_dat('=');
+	    lcd_dat('=');
             calculate();
             
         }
