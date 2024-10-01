@@ -5,21 +5,21 @@ sbit btn=P3^0;
 void delay();
 void main()
   {
-   IE=0x84;                    // Activating the interrupts  EX1
+   IE=0x84;     // Activating the interrupts  EX1
    while(1)
 	 {	
-		delay();
+	  delay();
 	 };
   }
  void extr1(void) interrupt 2    //Subroutine EX with Interrupt 
   {
-		if(btn == 1)
-		{
+   if(btn == 1)
+   {
     led=~led;
-	  delay();
-		 }
+    delay();
+    }
   }
-	void delay()
+  void delay()
    {
      int i;
      TMOD = 0x01;      // Timer0 mode1
@@ -32,5 +32,4 @@ void main()
        TR0 = 0;               // Stop Timer
        TF0 = 0;               // Clear flag
        }
-
 }
