@@ -9,14 +9,13 @@ void delay (unsigned int t)
    for(j=0; j<100;j++);
 	}
 void main() 
-{
-	
-    while(1) 
-			{
-        if (button == 0)
- {
-					led=~led;
-					delay(500);
+{	
+    while(1)	
+    {
+     if (button == 0)
+       {
+	led=~led;
+	delay(500);
         }
     }
 }
